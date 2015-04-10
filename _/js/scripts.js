@@ -3,4 +3,6 @@ $(document).ready(function() {
     anchors: ['edwardAlonzo', 'workExperience', 'myEducation', 'mySkills', 'myInterests'],
     menu: '#pageNav'
   });
+  $("h1").fitText();
+
 });
