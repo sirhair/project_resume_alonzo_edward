@@ -58,6 +58,12 @@ html{
 header, section{
   padding:.5em;
 }
+
+@media (min-width:52rem){
+  section{
+
+  }
+}
 header{
   background-color: orange;
 }
