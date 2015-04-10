@@ -3,5 +3,4 @@ $(document).ready(function() {
     anchors: ['edwardAlonzo', 'workExperience', 'myEducation', 'mySkills', 'myInterests'],
     menu: '#pageNav'
   });
-  $('#pageNav').stickUp();
 });
