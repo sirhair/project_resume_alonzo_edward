@@ -4,6 +4,9 @@ html{
 }
 
 /*layouts*/
+/*#pagenav{
+  position:static;
+}*/
 .container,header, section{
   padding:.5em;
 }
