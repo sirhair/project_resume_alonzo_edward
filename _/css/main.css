@@ -123,9 +123,11 @@ header figure img{
 @media (min-width:52rem){
   .layout{
     float:left;
+    padding: 0 1em;
   }
   .layout:only-of-type{
-    width:100%;
+    width:  100%;
+    padding: 0 calc(100%/3);
   }
   .layout:nth-last-of-type(2n):first-of-type,   .layout:nth-last-of-type(2n):first-of-type ~ .layout{
     width:50%;
