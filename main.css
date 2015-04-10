@@ -3,6 +3,13 @@ html{
   font-family: 'Cabin', sans-serif;
 }
 
+/*layouts*/
+.container,header, section{
+  padding:1em;
+}
+
+
+
 
 /*Headings*/
 h1,h2,h3{
@@ -31,3 +38,9 @@ header h1{
 header figure img{
   max-width:10rem;
 }
+
+header{
+  background-color: orange;
+}
+
+section{}
