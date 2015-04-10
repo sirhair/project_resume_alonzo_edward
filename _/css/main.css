@@ -46,7 +46,8 @@ html{
 #pageNav li.active a{
   color: #fff;
 }
-.container,header, section{
+
+header, section{
   padding:.5em;
 }
 header{
