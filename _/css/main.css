@@ -1,6 +1,11 @@
 html{
   font-size:16px;
   font-family: 'Cabin', sans-serif;
+  box-sizing:border-box;
+}
+
+*, *::before, *::after{
+box-sizing: inherit;
 }
 
 /********************Page Nav*/
@@ -59,11 +64,6 @@ header, section{
   padding:.5em;
 }
 
-@media (min-width:52rem){
-  section{
-
-  }
-}
 header{
   background-color: orange;
 }
@@ -118,4 +118,23 @@ header figure img{
   max-width:10rem;
 }
 
+/********************responsive layout sections*/
+@media (min-width:52rem){
+  .layout{
+    float:left;
+  }
+  .layout:only-of-type{
+    width:100%;
+  }
+  .layout:nth-last-of-type(2n):first-of-type,   .layout:nth-last-of-type(2n):first-of-type ~ .layout{
+    width:50%;
+  }
+  .layout:nth-last-of-type(3n):first-of-type,   .layout:nth-last-of-type(3n):first-of-type ~ .layout{
+    width:calc(100%/3);
+  }
+/*  .layout:nth-last-of-type(5):first-of-type,   .layout:nth-last-of-type(5):first-of-type ~ .layout{
+    width:100%;
+*/
+  }
+}
 
