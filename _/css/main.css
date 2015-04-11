@@ -38,7 +38,8 @@ figure{
 
 #pageNav li {
   display:inline-block;
-  padding: .5rem;
+  padding: .5rem;  
+  margin-left:0em;
   margin:0;
   color: #000;
   list-style-type: none;
