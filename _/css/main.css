@@ -1,6 +1,6 @@
 html{
   font-size:18px;
-  line-height: 1.6em;
+  line-height: 1.8em;
   font-family: 'Cabin', sans-serif;
   box-sizing:border-box;
 }
@@ -10,6 +10,13 @@ html{
   border:0;
   padding:0;
   margin:0;
+}
+ul{
+  margin-top: .5em;
+}
+li{
+  margin-left:2em;
+  line-height: 2em;
 }
 
 /********************Page Nav*/
@@ -125,6 +132,12 @@ header figure img{
 
 /********************responsive layout sections*/
 @media (min-width:52rem){
+
+  header, section{
+    padding:1.5rem;
+  }
+
+
   .layout{
     float:left;
     padding: 0 1em;
