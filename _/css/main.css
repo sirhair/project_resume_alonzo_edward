@@ -23,21 +23,15 @@ figure{
 }
 
 /********************Page Nav*/
-#mobileMenu{
-   display: block;
-}
 #pageNav{
-  display: none;
   position:fixed;
   top:0;
-  left:0;
+  right:0;
   font-size: 1rem;
   z-index: 70;
   width: 100%;
   padding: 0;
   margin:0;  
-  background:#fff;
-  background: rgba(255,255,255, 0.7);
 }
 
 #pageNav li {
@@ -47,8 +41,23 @@ figure{
   margin:0;
   color: #000;
   list-style-type: none;
+  display:none;
+}
+#pageNav li:first-of-type {
+  display:block;
+  width:4em;
+  text-align: right;
+  width:100%;
+  padding:0;
+  font-size:1.25em;
+  font-weight: 300;
 }
 
+#pageNav li:first-of-type a {
+  padding: 1rem;
+  display:block;
+
+}
 #pageNav li.active{
   background:#666;
   background: rgba(0,0,0, 0.7);
@@ -109,7 +118,7 @@ section:nth-of-type(4){
 
 
 /********************Headings*/
-h1,h2,h3{  
+h1,h2,h3, #pageNav{  
   font-family: 'Lato', sans-serif;
   line-height: 1.4em;
 }
@@ -146,11 +155,15 @@ header figure img{
   html{
     line-height: 1.8em;
   }
-  #mobileMenu{
-    display: none;
+  #pagenav{
+    background:#fff;
+    background: rgba(255,255,255, 0.2);
   }
-  #pageNav{
-    display: block;
+  #pageNav li:first-of-type {
+    display:none;
+  }
+  #pageNav li {
+    display:inline-block;
   }
 
   header, section{
@@ -181,4 +194,5 @@ header figure img{
 */
   }
 }
+
 
