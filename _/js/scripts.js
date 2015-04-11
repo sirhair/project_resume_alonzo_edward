@@ -8,4 +8,8 @@ $(document).ready(function() {
   //fit text jquery plugin
   $("h1").fitText();
 
+  //add meanMenu for mobile menu issue
+  $('body nav').first().meanmenu();
+
+
 });
