@@ -1,6 +1,6 @@
 html{
   font-size:18px;
-  line-height: 1.4em;
+  line-height: 1.3em;
   font-family: 'Cabin', sans-serif;
   box-sizing:border-box;
 }
@@ -23,7 +23,11 @@ figure{
 }
 
 /********************Page Nav*/
+#mobileMenu{
+   display: block;
+}
 #pageNav{
+  display: none;
   position:fixed;
   top:0;
   left:0;
@@ -106,8 +110,8 @@ section:nth-of-type(4){
 
 /********************Headings*/
 h1,h2,h3{  
-  margin-top:.5em;
   font-family: 'Lato', sans-serif;
+  line-height: 1.4em;
 }
 
 h1{
@@ -116,7 +120,7 @@ h1{
   font-weight: 300;
 }
 h2{
-
+  margin-top:.25em;
   font-size:1.3rem;
   font-weight: 400;
 }
@@ -142,6 +146,12 @@ header figure img{
   html{
     line-height: 1.8em;
   }
+  #mobileMenu{
+    display: none;
+  }
+  #pageNav{
+    display: block;
+  }
 
   header, section{
     padding:1.5rem;
@@ -149,7 +159,9 @@ header figure img{
   li{
     line-height: 2em;
   }
-
+  h1,h2,h3{  
+    margin-top:.5em;
+  }
   .layout{
     float:left;
     padding: 0 1em;
